@@ -35,17 +35,7 @@ Your reflection should be approximately 150–200 words and address the followin
 2. What challenges did you encounter, and how did you overcome them?
 3. Explain the differences between stacks and queues as this relates to real-world applications.
 
-I used a Python list for the stack and collections.deque for the
-queue. I left the TODO comments in place and added comments to explain what the code did.
-
-I added 10, 20, 30, and 40 to both. The stack took out 40 first, and the queue took out 10 first. 
-I also checked what happened when
-they were empty. The program printed an error message and kept
-going. Then I tried each one with just one item. After removing that item, is_empty() returned True.
-
-For the real-world example, I added a support desk. Tickets went
-into a queue and were handled in the order they came in. The stack
-kept a history of those actions. When I removed an entry from the
-history, it took out the most recent one. It did not put the ticket back in the queue.
-
-Both structures used O(n) space. Basically, the more items they held, the more memory they needed.
+For this assignment. I used a Pyhthon’s name for the tool you used to store the queue. I tested both with 10, 20, 30, and 40. The stack removed 40 first because items were added and removed from the same end. This showed LIFO, or last in, first out. The queue removed 10 first because items were added at the back and removed from the front. This showed FIFO, or first in, first out.
+One problem I had was getting IntelliJ to find the Python interpreter. After selecting it in the run configuration, the program ran. I also tested empty structures and single-item cases. Catching the errors let the rest of the examples keep running.
+For my real-world example, I used a support desk. The queue handled tickets in arrival order, while the stack kept the action history. Removing the latest history entry did not return the ticket to the queue.
+Both structures used O(n) space, so more stored items meant more memory was needed. Seeing the removal order helped me understand when to use each structure.
